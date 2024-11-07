@@ -16,8 +16,13 @@
     margin-right: auto;
 }
 
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
 .bg-gray {
-    background-color: #d3d3d3;
+    background-color: #f6f6f6;
 }
 
 /*-----------
@@ -45,6 +50,10 @@
     background-color: #23272a;
     color: #fff;
 }
+.btn-violet {
+    background-color: #8ea1e1;
+    color: #fff;
+}
 
 /*-----------
     TYPOGRAPHY
@@ -55,7 +64,15 @@ body {
 }
 
 h1 {
+    font-size: 50px;
+}
+
+h2 {
     font-size: 40px;
+}
+
+h3 {
+    font-size: 26px
 }
 
 /*-----------
@@ -132,19 +149,46 @@ section {
     padding: 50px 0;
 }
 
-section:nth-child(2n) {
-    background-color: #d3d3d3;
-}
-
-section > .container {
+section .container.has-cols {
     display: flex;
 }
 
+section:nth-child(2n) {
+    background-color: #f6f6f6;
+}
+
+section .col-big.content-right {
+    text-align: right;
+}
+
+/* section:not(:last-child) > .container {
+    display: flex;
+} */
+
+section:last-child {
+    text-align: center;
+}
+
 section .col-big {
-    width: 60%;
+    width: 70%;
 }
 section .col-small {
-    width: 40%;
+    width: 30%;
+}
+
+section h2 {
+    margin: 22px 0;
+}
+
+section h3 {
+    margin-bottom: 20px;
+}
+
+#title-stars {
+    background-image: url('../img/stars.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    padding-top: 30px;
 }
 
 /*-----------
